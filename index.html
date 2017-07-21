@@ -1,0 +1,2689 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.7.2.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="css/Font/demo-files/demo.css" />
+		<script>
+		    window.onload = function(){
+		    	//购物车
+		    	$(".nav>div>a").hover(function(){
+		    		$(this).children("div").stop().slideDown()
+		    	},function(){
+		    		$(this).children("div").stop().slideUp()
+		    	})
+		    	//导航栏
+		    	 $("#oUl>.slide").hover(function(){
+		    		$(this).children("div").stop().show()
+		    	},function(){
+		    		$(this).children("div").stop().hide()
+		    	})
+		    	 
+			     //侧导航
+			     $(".b-two>ul>li").hover(function(){
+					$(this).children(".show").stop().show()
+					$(this).css("background","#FF6700")
+				},function(){
+					$(this).children(".show").stop().hide()
+					$(this).css({"background":" rgba(0,0,255,0)",})
+				})
+			     
+			     //banner
+			    $("#tab_1>li").click(function(){
+			    	$("#tab>li").removeClass("show")
+			     	$("#tab>li").eq($(this).index()).addClass("show");
+//			     	
+			    })
+			    setInterval(move,1000)
+			    var i
+			    function move(){
+			    	i++;
+			    	if(i>$("#tab>li").length){
+			    		i = 0
+			    	}
+			    	$("#tab>li").eq(i).fadeIn().siblings().fadeOut();
+			    }
+			    //家电
+				$(".box1>.house>.one>p>a").hover(function(){
+					$(".box1>.house>.two>ul").removeClass("show_1")
+		    		$(".box1>.house>.two>ul").eq($(this).index()).addClass("show_1")
+		    	})
+				
+				//智能
+				$(".box1>.aptitude>.one>p>a").hover(function(){
+					$(".box1>.aptitude>.two>ul").removeClass("show_1")
+		    		$(".box1>.aptitude>.two>ul").eq($(this).index()).addClass("show_1")
+		    	})
+				
+				//搭配
+				$(".box1>.match>.one>p>a").hover(function(){
+					$(".box1>.match>.two>ul").removeClass("show_1")
+		    		$(".box1>.match>.two>ul").eq($(this).index()).addClass("show_1")
+		    	})
+				
+				//配件
+				$(".box1>.parts>.one>p>a").hover(function(){
+					$(".box1>.parts>.two>ul").removeClass("show_1")
+		    		$(".box1>.parts>.two>ul").eq($(this).index()).addClass("show_1")
+		    	})
+				
+				//周边
+				$(".box1>.rim>.one>p>a").hover(function(){
+					$(".box1>.rim>.two>ul").removeClass("show_1")
+		    		$(".box1>.rim>.two>ul").eq($(this).index()).addClass("show_1")
+		    	})
+		    }
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<div><img src="img/images/小米官网_02.jpg" /></div>
+		</div>
+		<div class="nav">
+			<div class="clearfix">
+				<ul class="fl">
+					<li><a href="#">小米商城</a></li>
+					<li><a href="#">MIUI</a></li>
+					<li><a href="#">米聊</a></li>
+					<li><a href="#">游戏</a></li>
+					<li><a href="#">多看阅读</a></li>
+					<li><a href="#">云服务</a></li>
+					<li><a href="#">金融</a></li>
+					<li><a href="#">小米商城金融版</a></li>
+					<li><a href="#">问题反馈</a></li>
+					<li style="border-right: none;"><a href="#">小米商城</a></li>
+				</ul>
+				<a href="#" class="fr">
+					<span class="icon icon-cart"></span>
+					购物车
+					<div>购物车没有东西</div>
+				</a>
+				<ul class="fr">
+					<li>
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">注册</a>
+					</li>
+					<li style="border-right: none;">
+						<a href="#">消息通知</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box">
+			<div class="b-one clearfix">
+				<img src="img/images/小米官网_10.jpg" />
+				<img src="img/images/小米官网_12.jpg" />
+				<div class="b_one1">
+					<ul class="clearfix" id="oUl">
+						<li class="slide">
+							<a href="#">小米手机</a>
+							<div>
+								<ul class="clearfix">
+									<li class="fl">
+										<img src="img/images/小米官网_48.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_49.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_51.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_48.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_49.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="slide">
+							<a href="#">红米</a>
+							<div>
+								<ul class="clearfix">
+									<li class="fl">
+										<img src="img/images/小米官网_48.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_49.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_51.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="slide">
+							<a href="#">平板·笔记本</a>
+							<div>
+								<ul class="clearfix">
+									<li class="fl">
+										<img src="img/images/小米官网_55.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_64.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_55.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="slide">
+							<a href="#">电视</a>
+							<div>
+								<ul class="clearfix">
+									<li class="fl">
+										<img src="img/images/小米官网_62.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_63.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_62.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="slide">
+							<a href="#">盒子·影音</a>
+							<div>
+								<ul class="clearfix">
+									<li class="fl">
+										<img src="img/images/小米官网_48.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_49.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_51.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_51.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="slide">
+							<a href="#">路由器</a>
+							<div>
+								<ul class="clearfix">
+									<li class="fl">
+										<img src="img/images/小米官网_48.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_49.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_51.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_49.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_51.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="slide">
+							<a href="#">智能硬件</a>
+							<div>
+								<ul class="clearfix">
+									<li class="fl">
+										<img src="img/images/小米官网_48.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_49.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+									<li class="fl">
+										<img src="img/images/小米官网_51.jpg" /><br />
+										<span>小米6</span><br />
+										<span>2499元起</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">服务</a>
+						</li>
+						<li>
+							<a href="#">社区</a>
+						</li>
+					</ul>
+				</div>
+				<div class="fr b_one2">
+					<input type="text" placeholder="电视4A“特惠”" class="fl" />
+					<div class="fl icon icon-search"></div>
+				</div>
+			</div>
+			<div class="b-two clearfix">
+				<ul class="fl">
+					<li class="clearfix">
+						<div>
+							<span class="fl">手机 电话卡</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul class="clearfix">
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div>
+							<span class="fl">笔记本 平板</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul class="clearfix">
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div>
+							<span class="fl">电视 盒子</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul class="clearfix">
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div>
+							<span class="fl">路由器 智能硬件</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul class="clearfix">
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div>
+							<span class="fl">移动电源 电池 插线板</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul class="clearfix">
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div>
+							<span class="fl">耳机 音响</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul class="clearfix">
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div>
+							<span class="fl">保护套 贴膜</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul class="clearfix">
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div>
+							<span class="fl">线材 支架 储存卡</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul class="clearfix">
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div>
+							<span class="fl">箱包 服饰 鞋 眼镜</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul class="clearfix">
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div>
+							<span class="fl">米兔 生活周边</span>
+							<a href="#" class="fr">〉</a>
+						</div>
+						<div class="show">
+							<ul>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+								<li>
+									<img src="img/images/小米官网_12.jpg" class="fl"/>
+									<p class="fl">小米6</p>
+									<a href="#" class="fl">选购</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="img fl">
+					<ul id="tab">
+						<li class="show"><img src="img/images/banner_1.png" /></li>
+						<li><img src="img/images/banner_2.jpg" /></li>
+						<li><img src="img/images/banner_3.jpg" /></li>
+						<li><img src="img/images/banner_4.jpg" /></li>
+						<li><img src="img/images/banner_5.jpg" /></li>
+					</ul>
+					<ul>
+						<li class="clearfix jt">
+							<a class="fl" href="#"><img src="img/images/小米官网_07 .jpg" /></a>
+							<a class="fr" href="#"><img src="img/images/小米官网_08.jpg" /></a>
+						</li>
+					</ul>
+					<ul id="tab_1">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<div class="b-three clearfix">
+				<div class="one fl">
+					<ul class="clearfix">
+						<li class="fl">
+							<a href="#">
+								<img src="img/images/小米官网_31.jpg" /><br />
+								<span>选购手机</span>
+							</a>
+						</li>
+						<li class="fl">
+							<a href="#">
+								<img src="img/images/小米官网_33.jpg" /><br />
+								<span>企业团购</span>
+							</a>
+						</li>
+						<li class="fl">
+							<a href="#">
+								<img src="img/images/小米官网_34.jpg" /><br />
+								<span>一元活动</span>
+							</a>
+						</li>
+						<li class="fl">
+							<a href="#">
+								<img src="img/images/小米官网_39.jpg" /><br />
+								<span>小米移动</span>
+							</a>
+						</li>
+						<li class="fl">
+							<a href="#">
+								<img src="img/images/小米官网_40.jpg" /><br />
+								<span>以旧换新</span>
+							</a>
+						</li>
+						<li class="fl">
+							<a href="#">
+								<img src="img/images/小米官网_31.jpg" /><br />
+								<span>话费充值</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#"><img src="img/images/小米官网_25.jpg" /></a>
+				<a href="#"><img src="img/images/小米官网_27.jpg" /></a>
+				<a href="#"><img src="img/images/小米官网_29.jpg" /></a>
+			</div>
+			<div class="b-fore">
+				<div class="one clearfix">
+					<h3 class="fl">小米明星单品</h3>
+					<p class="fr">
+						<a href="#"><</a>
+						<a href="#">></a>
+					</p>
+				</div>
+				<ul class="clearfix">
+					<li class="fl li1">
+						<a href="#"><img src="img/images/小米官网_48.jpg" /></a>
+						<a href="#">红米Note 4X</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+					<li class="fl li2">
+						<a href="#"><img src="img/images/小米官网_49.jpg" /></a>
+						<a href="#">红米Note 4X</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+					<li class="fl li3">
+						<a href="#"><img src="img/images/小米官网_51.jpg" /></a>
+						<a href="#">红米Note 4X</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+					<li class="fl li4">
+						<a href="#"><img src="img/images/小米官网_53.jpg" /></a>
+						<a href="#">红米Note 4X</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+					<li class="fl li5">
+						<a href="#"><img src="img/images/小米官网_55.jpg" /></a>
+						<a href="#">红米Note 4X</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="b1-one house">
+				<div class="one clearfix">
+					<h3 class="fl">家电</h3>
+					<p class="fr">
+						<a href="#">热门</a>
+						<a href="#">电视影音</a>
+						<a href="#">电脑</a>
+						<a href="#">家具</a>
+					</p>
+				</div>
+				<div class="clearfix two">
+					<img src="img/images/小米官网_61.jpg" class="fl" />
+					
+					<ul class="fl show_1">
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_62.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享9折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_63.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_64.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_65.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_70.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"></a><img src="img/images/小米官网_71.jpg" />
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_72.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_74.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fr">
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_72.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享9折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_71.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_70.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_65.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_64.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"></a><img src="img/images/小米官网_63.jpg" />
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_62.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_74.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_65.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享9折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_62.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_70.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_71.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_63.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"></a><img src="img/images/小米官网_64.jpg" />
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_72.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_74.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_70.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享9折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_71.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_72.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_62.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_63.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"></a><img src="img/images/小米官网_64.jpg" />
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_65.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_74.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="b1-one aptitude">
+				<div class="one clearfix">
+					<h3 class="fl">智能</h3>
+					<p class="fr">
+						<a href="#">热门</a>
+						<a href="#">出行</a>
+						<a href="#">健康</a>
+						<a href="#">酷玩</a>
+						<a href="#">路由器</a>
+					</p>
+				</div>
+				<div class="clearfix two">
+					<div class="two_1 fl">
+						<img src="img/images/小米官网_81.jpg" />
+						<img src="img/images/小米官网_91.jpg" />
+					</div>
+					<ul class="fl show_1">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_92.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_93.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_94.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_82.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_83.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_84.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_85.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: cornflowerblue;">有赠品</div>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_96.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_85.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_92.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_83.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_93.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_84.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_94.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_82.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: cornflowerblue;">有赠品</div>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_96.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_92.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_82.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_93.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_83.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_94.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_84.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_85.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: cornflowerblue;">有赠品</div>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_96.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_83.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_84.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_85.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_92.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_93.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_94.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_85.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: cornflowerblue;">有赠品</div>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_96.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_92.jpg" /></a>
+							<a href="#">小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_82.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_83.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_84.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_85.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_94.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: greenyellow;">新品</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_93.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: cornflowerblue;">有赠品</div>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_96.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="b1-one match">
+				<div class="one clearfix">
+					<h3 class="fl">搭配</h3>
+					<p class="fr">
+						<a href="#">热门</a>
+						<a href="#">出行</a>
+						<a href="#">健康</a>
+						<a href="#">酷玩</a>
+						<a href="#">路由器</a>
+					</p>
+				</div>
+				<div class="clearfix two">
+					<div class="two_1 fl">
+						<img src="img/images/小米官网_107.jpg" />
+						<img src="img/images/小米官网_124.jpg" />
+					</div>
+					<ul class="fl show_1">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_108.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_109.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_110.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_111.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_117.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享9折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_118.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_119.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_121.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_118.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_119.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_117.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_108.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_109.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享9折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_110.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_111.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_121.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_111.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_110.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_109.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_108.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_119.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享9折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_118.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_117.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_121.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_118.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_119.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_111.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_110.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_109.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享9折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_108.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_110.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_121.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_110.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_111.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_118.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_117.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_109.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享9折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_108.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_119.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_121.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="b1-one parts">
+				<div class="one clearfix">
+					<h3 class="fl">配件</h3>
+					<p class="fr">
+						<a href="#">热门</a>
+						<a href="#">保护套</a>
+						<a href="#">贴膜</a>
+						<a href="#">其他配件</a>
+					</p>
+				</div>
+				<div class="clearfix two">
+					<div class="two_1 fl">
+						<img src="img/images/小米官网_129.jpg" />
+						<img src="img/images/小米官网_139.jpg" />
+					</div>
+					<ul class="fl show_1">
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_130.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享6折</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_131.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享6折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_132.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_133.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_140.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_141.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_142.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_144.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_140.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享6折</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_141.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享6折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_142.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_130.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_131.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_132.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_133.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_144.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_133.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享6折</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_132.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享6折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_133.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_140.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_141.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_142.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_130.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_144.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_141.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享6折</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_142.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq">享6折</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_132.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_133.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_131.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_130.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_140.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_144.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="b1-one rim">
+				<div class="one clearfix">
+					<h3 class="fl">周边</h3>
+					<p class="fr">
+						<a href="#">热门</a>
+						<a href="#">服装</a>
+						<a href="#">米兔</a>
+						<a href="#">生活周边</a>
+						<a href="#">箱包</a>
+					</p>
+				</div>
+				<div class="clearfix two">
+					<div class="two_1 fl">
+						<img src="img/images/小米官网_151.jpg" />
+						<img src="img/images/小米官网_16.jpg" />
+					</div>
+					<ul class="fl show_1">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_152.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_153.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_154.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_155.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_161.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_162.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_163.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_144.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_152.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_153.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_154.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_155.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_161.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_162.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_163.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_144.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_152.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_153.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_154.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_155.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_161.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_162.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_163.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_144.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_152.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_153.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_154.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_155.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_161.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_162.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_163.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_144.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="fl">
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_152.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_153.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_154.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_155.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1 bqf">
+							<a href="#"><img src="img/images/小米官网_161.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+							<div class="bq" style="background: #FFAC13;">免邮费</div>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_162.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li1">
+							<a href="#"><img src="img/images/小米官网_163.jpg" /></a>
+							<a>小米电视4A 49英寸</a>
+							<p>7.7-7.31 直降300</p>
+							<p>2299元<s>2500元</s></p>
+						</li>
+						<li class="fl li2">
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_144.jpg" class="fr" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="auto">
+									<div class="fl">
+										<p>米家扫地机</p>
+										<p>1699元</p>
+									</div>
+									<img src="img/images/小米官网_103.jpg" class="fr" />
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="b-fore">
+				<div class="one clearfix">
+					<h3 class="fl">为你推荐</h3>
+					<p class="fr">
+						<a href="#">
+							<</a>
+						<a href="#">></a>
+					</p>
+				</div>
+				<ul class="clearfix">
+					<li class="fl li1">
+						<a href="#"><img src="img/images/小米官网_173.jpg" /></a>
+						<a>小米电视4A 49英寸</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+					<li class="fl li2">
+						<a href="#"><img src="img/images/小米官网_174.jpg" /></a>
+						<a>小米电视4A 49英寸</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+					<li class="fl li3">
+						<a href="#"><img src="img/images/小米官网_175.jpg" /></a>
+						<a>小米电视4A 49英寸</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+					<li class="fl li4">
+						<a href="#"><img src="img/images/小米官网_176.jpg" /></a>
+						<a>小米电视4A 49英寸</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+					<li class="fl li5">
+						<a href="#"><img src="img/images/小米官网_177.jpg" /></a>
+						<a>小米电视4A 49英寸</a>
+						<p>410mAh超长续航，多彩金属</p>
+						<p>999元起</p>
+					</li>
+				</ul>
+			</div>
+			<div class="b1-two">
+				<div class="one">
+					<h3>热评产品</h3>
+				</div>
+				<ul class="clearfix">
+					<li class="fl li1">
+						<img src="img/images/小米官网_183.jpg" />
+						<div class="text">
+							<p>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小米出的东西我都喜欢！那倒是因为那一句？？小米为..</p>
+							<p>410mAh超长续航，多彩金属</p>
+							<p>999元起</p>
+						</div>
+					</li>
+					<li class="fl li2">
+						<img src="img/images/小米官网_185.jpg" />
+						<div class="text">
+							<p>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小米出的东西我都喜欢！那倒是因为那一句？？小米为..</p>
+							<p>410mAh超长续航，多彩金属</p>
+							<p>999元起</p>
+						</div>
+					</li>
+					<li class="fl li3">
+						<img src="img/images/小米官网_187.jpg" />
+						<div class="text">
+							<p>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小米出的东西我都喜欢！那倒是因为那一句？？小米为..</p>
+							<p>410mAh超长续航，多彩金属</p>
+							<p>999元起</p>
+						</div>
+					</li>
+					<li class="fl li4">
+						<img src="img/images/小米官网_189.jpg" />
+						<div class="text">
+							<p>超级喜欢！小巧玲珑！音质完美！不知道为什么！只要是小米出的东西我都喜欢！那倒是因为那一句？？小米为..</p>
+							<p>410mAh超长续航，多彩金属</p>
+							<p>999元起</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="b1-three">
+				<div class="one clearfix">
+					<h3 class="fl">内容</h3>
+				</div>
+				<ul class="clearfix">
+					<li class="fl li1">
+						<p>图书</p>
+						<a href="#">哈利·波特与被诅咒的孩子</a>
+						<a href="#">“哈利1波特”第八个故事中文版震撼来<br/>袭！特别彩排版剧本</a>
+						<a href="#">29.37元</a>
+						<a href="#"><img src="img/images/小米官网_194.jpg" /></a>
+						<ul class="clearfix ul">
+							<li class="fl"></li>
+							<li class="fl"></li>
+							<li class="fl"></li>
+						</ul>
+					</li>
+					<li class="fl li2">
+						<p>MIUI主题</p>
+						<a href="#">夏日狂想</a>
+						<a href="#">官方主题新画风，原来你是这样的小<br/>清新</a>
+						<a href="#">免费</a>
+						<a href="#"><img src="img/images/小米官网_195.jpg" /></a>
+						<ul class="clearfix ul">
+							<li class="fl"></li>
+							<li class="fl"></li>
+							<li class="fl"></li>
+							<li class="fl"></li>
+						</ul>
+					</li>
+					<li class="fl li3">
+						<p>游戏</p>
+						<a href="#">米柚手游模拟器</a>
+						<a href="#">在电脑上玩遍小米所有手游</a>
+						<a href="#">免费</a>
+						<a><img src="img/images/小米官网_197.jpg" /></a>
+						<ul class="clearfix ul">
+							<li class="fl"></li>
+							<li class="fl"></li>
+							<li class="fl"></li>
+						</ul>
+					</li>
+					<li class="fl li4">
+						<p>应用</p>
+						<a href="#">2017金米奖</a>
+						<a href="#">最优秀的应用和游戏</a>
+						<a href="#">免费</a>
+						<a href="#"><img src="img/images/小米官网_198.jpg" /></a>
+						<ul class="clearfix ul">
+							<li class="fl"></li>
+							<li class="fl"></li>
+							<li class="fl"></li>
+							<li class="fl"></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="b1-two b1-tt">
+				<div class="one clearfix">
+					<h3 class="fl">视频</h3>
+					<a href="#" class="fr">查看更多》</a>
+				</div>
+				<ul class="clearfix">
+					<li class="fl li1">
+						<a href="#"><img src="img/images/小米官网_203.jpg" /></a>
+						<div class="text">
+							<a href="#">听雷总讲述小米7年探索之路</a><br />
+							<span>小米6.7年工艺探索的巅峰之作</span>
+						</div>
+					</li>
+					<li class="fl li2">
+						<a href="#"><img src="img/images/小米官网_204.jpg" /></a>
+						<div class="text">
+							<a href="#">小米6外观设计视频</a><br />
+							<span>镇静！小米6竟然如此之美</span>
+						</div>
+					</li>
+					<li class="fl li3">
+						<a href="#"><img src="img/images/小米官网_205.jpg" /></a>
+						<div class="text">
+							<a href="#">小米电视4外观设计视频</a><br />
+							<span>美哭了！史上最美的小米电视</span>
+						</div>
+					</li>
+					<li class="fl li4">
+						<a href="#"><img src="img/images/小米官网_206.jpg" /></a>
+						<div class="text">
+							<a href="#">4.9mm极超薄电视的诞生揭秘</a><br />
+							<span>小米电视工程师讲述极致之作的背后故事</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box2">
+			<ul class="clearfix">
+				<li class="fl">
+					<a><img src="img/images/小米官网_223.jpg" /> 预约维修服务</a>
+				</li>
+				<li class="fl">
+					<a><img src="img/images/小米官网_224.jpg" /> 7天无理由退货</a>
+				</li>
+				<li class="fl">
+					<a><img src="img/images/小米官网_225.jpg" /> 15天免费换货</a>
+				</li>
+				<li class="fl">
+					<a><img src="img/images/小米官网_226.jpg" /> 满150元包邮</a>
+				</li>
+				<li class="fl">
+					<a><img src="img/images/小米官网_228.jpg" /> 520余家售后网点</a>
+				</li>
+			</ul>
+			<div class="clearfix b3-two">
+				<div class="fl">
+					<ul class="fl">
+						<li class="strong">帮助中心</li>
+						<li><a href="#">账号管理</a></li>
+						<li><a href="#">购物指南</a></li>
+						<li><a href="#">订单操作</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="strong">帮助中心</li>
+						<li><a href="#">账号管理</a></li>
+						<li><a href="#">购物指南</a></li>
+						<li><a href="#">订单操作</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="strong">帮助中心</li>
+						<li><a href="#">账号管理</a></li>
+						<li><a href="#">购物指南</a></li>
+						<li><a href="#">订单操作</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="strong">帮助中心</li>
+						<li><a href="#">账号管理</a></li>
+						<li><a href="#">购物指南</a></li>
+						<li><a href="#">订单操作</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="strong">帮助中心</li>
+						<li><a href="#">账号管理</a></li>
+						<li><a href="#">购物指南</a></li>
+						<li><a href="#">订单操作</a></li>
+					</ul>
+					<ul class="fl">
+						<li class="strong">帮助中心</li>
+						<li><a href="#">账号管理</a></li>
+						<li><a href="#">购物指南</a></li>
+						<li><a href="#">订单操作</a></li>
+					</ul>
+				</div>
+				<ul class="fr">
+					<li>小米客服</li>
+					<li>7×24小时全天陪伴</li>
+					<li>为您解决问题</li>
+					<li class="lii"><a href="#">立即开始咨询</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="box3">
+			<div class="clearfix">
+				<img src="img/images/小米官网_10.jpg" class="fl"/>
+				<div class="fl">
+					<ul>
+						<li class="fl"><a href="#">小米商城</a></li>
+						<li class="fl"><a href="#">MIUI</a></li>
+						<li class="fl"><a href="#">米聊</a></li>
+						<li class="fl"><a href="#">多看书城</a></li>
+						<li class="fl"><a href="#">小米路由器</a></li>
+						<li class="fl"><a href="#">视频电话</a></li>
+						<li class="fl"><a href="#">小米天猫店</a></li>
+						<li class="fl"><a href="#">小米淘宝直营店</a></li>
+						<li class="fl"><a href="#">小米网盟</a></li>
+						<li class="fl"><a href="#">小米移动</a></li>
+						<li class="fl"><a href="#">隐私政策</a></li>
+						<li class="fl"><a href="#">小米商城</a></li>
+					</ul>
+					<p>&copy;.com京ICP证110507号京ICP备10046444号 京公网安备11010802020134号 京网文【2014】0059-0009号</p>
+					<p>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+				</div>
+				<ul class="fr">
+					<li class="fl"><img src="img/images/小米官网_216.jpg"/></li>
+					<li class="fl">
+						<img src="img/images/小米官网_218.jpg" class="fl"/>
+						<div class="fl">
+							<span>诚信网站</span><br />
+							<span>示范企业</span>
+						</div>
+					</li>
+					<li class="fl">
+						<img src="img/images/小米官网_220.jpg" class="fl" />
+						<div class="fl">
+							<span>诚信网站</span><br />
+							<span>示范企业</span>
+						</div>
+					</li>
+					<li class="fl">
+						<img src="img/images/小米官网_222.jpg" class="fl" />
+						<div class="fl">
+							<span>诚信网站</span><br />
+							<span>示范企业</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<p>探索黑科技，小米为发烧而生！</p>
+		</div>
+	</body>
+</html>
